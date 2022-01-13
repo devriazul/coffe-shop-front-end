@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset Code */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+.fix::before,
+.fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.heading {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.heading span {
+  color: #d3ad7f;
+}
+.btn {
+  background-color: #d3ad7f;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn:hover {
+  letter-spacing: 2px;
+}
+/* Reset Code End */
+
+#header {
+  background-color: #000;
+  padding: 10px 0;
+  border-bottom: 1px solid #777;
+}
+
+#header .nav .logo {
+  float: left;
+}
+#header .nav .menu {
+  float: right;
+  margin-top: 20px;
+}
+#header .nav .menu ul {
+  text-align: right;
+}
+#header .nav .menu ul li {
+  display: inline-block;
+}
+#header .nav .menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#header .nav .menu ul li:hover a {
+  color: #d3ad7f;
+}
+#header .nav .menu ul li:hover a::after {
+  position: absolute;
+  content: "";
+  top: 82%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #d3ad7f;
+}
+
+/* Banner-area CSS */
+
+.banner-area {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__content {
+  width: 50%;
+  padding-top: 140px;
+}
+.banner__content h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.banner__content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* About CSS */
+.about {
+  background-color: #13131a;
+}
+.about__img {
+  float: left;
+  width: 50%;
+}
+.about__img img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.about__content {
+  float: left;
+  width: 50%;
+  padding: 80px 20px 0 20px;
+}
+.about__content h3 {
+  font-size: 30px;
+}
+.about__content p {
+  font-size: 18px;
+  margin: 20px 0px;
+  line-height: 1.5;
+}
+
+/* Menu CSS */
+
+.menu__item {
+  text-align: center;
+  float: left;
+  width: 426px;
+  padding: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  transition: 0.3s;
+}
+.menu__item:hover {
+  color: #000;
+  background-color: #fff;
+}
+.menu__item:hover a {
+  color: #000;
+}
+.menu__item:nth-child(3),
+.menu__item:nth-child(6) {
+  margin-right: 0;
+}
+.menu__item h3 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+.menu__item p,
+.product__content p {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.menu__item p span,
+.product__content p span {
+  font-size: 15px;
+  text-decoration: line-through;
+  padding: 5px;
+}
+/* Product CSS */
+.product__item {
+  text-align: center;
+  float: left;
+  width: 426px;
+  padding: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+}
+.product__item:nth-child(3),
+.customer__review:nth-child(3),
+.single__blog:nth-child(3) {
+  margin-right: 0;
+}
+.product__icon i {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin: 4px;
+  border: 1px solid #777;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product__icon i:hover {
+  background-color: #d3ad7f;
+}
+.product__img {
+  margin: 20px 0;
+}
+.product__content h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.product__star {
+  color: #d3ad7f;
+  margin-bottom: 10px;
+}
+
+/* Customer Review CSS */
+
+.customer__review {
+  text-align: center;
+  float: left;
+  width: 426px;
+  padding: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+}
+
+.customer__quote {
+  margin-bottom: 20px;
+}
+.customer__review p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.customer__img img {
+  width: 70px;
+  height: 70px;
+  margin: 15px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer__review h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.customer__star {
+  color: #d3ad7f;
+}
+
+/* Contact CSS */
+.contact {
+  text-align: center;
+  background-color: #13131a;
+  margin-bottom: 20px;
+}
+.contact .map {
+  float: left;
+  width: 50%;
+}
+
+.contact .map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+.contact-form {
+  float: left;
+  width: 50%;
+}
+.contact-form h3 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 50px 0 15px;
+}
+.contact-form form {
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-form form input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  color: #fff;
+  background: #000;
+}
+
+.contact-form form input:focus {
+  outline: 0;
+}
+/* Blog CSS */
+
+.single__blog {
+  float: left;
+  width: 426px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+}
+.blog__img {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.single__blog .blog__img img {
+  width: 100%;
+  transition: 0.3s;
+  transform: scale(1);
+}
+.single__blog:hover .blog__img img {
+  transform: scale(1.2);
+}
+.blog__content {
+  padding: 0 0 20px 20px;
+}
+.blog__content h3 {
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.blog__content h3:hover {
+  color: #d3ad7f;
+}
+.blog__content h4 {
+  color: #d3ad7f;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+.blog__content p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+/* footer CSS */
+
+.footer-area {
+  background-color: #13131a;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.footer__icon i {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin: 4px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer__icon i:hover {
+  background-color: #d3ad7f;
+}
+.footer__menu {
+  padding: 20px 0;
+}
+.footer__menu ul li {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #777;
+}
+.footer__menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  padding: 6px 20px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.footer__menu ul li:hover a {
+  background-color: #d3ad7f;
+}
+
+.footer__text {
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.footer__text span {
+  color: #d3ad7f;
+}
